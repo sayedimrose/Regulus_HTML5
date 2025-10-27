@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Elements</title>
+</head>
+
+<body>
+    <h3>HTML Media Elements</h3>
+
+    <!-- Image examples -->
+    <h4>Network Image</h4>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Image_created_with_a_mobile_phone.png"
+        alt="Network Image" title="Sample Wikimedia Image" width="300" height="200">
+
+    <h4>Local Image</h4>
+    <img src="./assets/images/local-image.png" alt="Local Image" title="Dummy Image Placeholder" width="300"
+        height="200">
+
+    <hr>
+
+    <!-- Video -->
+    <h4>Video Example</h4>
+    <video width="500" controls autoplay loop muted>
+        <source src="./assets/videos/placeholder-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <hr>
+
+    <!-- Audio -->
+    <h4>Audio Example</h4>
+    <audio controls autoplay loop>
+        <source src="./assets/audios/ambient.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <hr>
+
+    <!-- Responsive Picture -->
+    <h4>Responsive Picture</h4>
+    <picture>
+        <source srcset="./assets/images/local-image-red.png" media="(min-width: 900px)">
+        <source srcset="./assets/images/local-image-green.png" media="(min-width: 700px)">
+        <source srcset="./assets/images/local-image-blue.png" media="(max-width: 500px)">
+        <img src="./assets/images/local-image.png" alt="Website Banner">
+    </picture>
+
+</body>
+
+</html>
